@@ -1,0 +1,64 @@
+h1{
+    color:aqua
+}
+h2{
+    color:rgb(225, 172, 241)
+}
+h3{
+    color:rgb(240, 90, 127)
+}
+h4{
+    color:rgb(201, 94, 186)
+}
+h5{
+    color:rgb(54, 4, 253)
+}
+h6{
+    color:rgb(151, 143, 65)
+}
+p{
+    color:rgb(43, 252, 1)
+}
+button{
+    color:indianred;
+    background-color: aquamarine;
+}
+.header > * {
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header > * {
+    display: inline-block;
+    font-size: 16px;
+    height: 100px;
+    vertical-align: middle;
+    line-height: 45px;
+}
+
+li{
+    display: inline;
+}
+
+.logo{
+    height: 100%;
+}
+
+.navbar{
+    text-align: left;
+    color: chartreuse;
+    font-weight: 500;
+    
+}
+
+.actions{
+    text-align: left;
+    font-size: 14px;
+}
+
+.actions > * {
+    margin-left: 10px;
+    margin-right: 10px;
+}
