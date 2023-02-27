@@ -4,36 +4,19 @@ h1{
 h2{
     color:rgb(225, 172, 241)
 }
-h3{
-    color:rgb(240, 90, 127)
-}
-h4{
-    color:rgb(201, 94, 186)
-}
-h5{
-    color:rgb(54, 4, 253)
-}
-h6{
-    color:rgb(151, 143, 65)
-}
-p{
-    color:rgb(43, 252, 1)
-}
-button{
-    color:indianred;
-    background-color: aquamarine;
-}
-.header > * {
-    margin-top: 40px;
-    margin-left: 20px;
+
+.header{
+    margin-top: 1px;
+    margin-left: 100px;
     margin-right: 20px;
     font-size: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
 .header > * {
     display: inline-block;
     font-size: 16px;
-    height: 100px;
+    height: 100%;
     vertical-align: middle;
     line-height: 45px;
 }
@@ -59,14 +42,13 @@ li{
 }
 
 .actions > * {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
+
 .publish h3{
-    color: blueviolet;
-    margin-left: 50px;
-    margin-right: 50px;
+    color: #24949c;
 }
 
 .video{
@@ -76,7 +58,7 @@ li{
 }
 
 .features{
-    background-color: #a7eef3;
+    background-color: #037a83;
     display: grid;
     padding: 5% 10%;
     grid-template-columns: repeat(2, 550px); /* se agregan 2 columnas de 300px*/
@@ -91,11 +73,11 @@ li{
 } */
 
 .features .feature-card {
-    margin-bottom: 22px;
-    margin-left: 8px;
-    margin-right: 10px;
-    background-color: #ffffff;
-    border: 2px solid #000000;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: #fff;
+    border: 2px solid #D91512;
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -140,6 +122,92 @@ right: -50px;
 height: 80%;
 }
 
+
+
+
+
+
+.por{
+    background-color: #f5dc99;
+    display: grid;
+    /*grid-template-columns: repeat(2, 550px);  se agregan 2 columnas de 300px
+    grid-template-rows: repeat(2, 300px);*/
+}
+
+.por .por-one .por-img{
+    flex: 2;
+    width: 30%;
+    position: relative;
+    right: -850px;
+    height: 650px;  
+}
+
+
+.por .por-one .por-eleven h1{
+    font-size: 55px;
+    color: rgb(35, 9, 53);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.por .por-one .por-eleven p{
+    font-size: 19px;
+    color: rgb(245, 20, 170);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.por .por-one .por-img-1{
+    flex: 2;
+    width: 30%;
+    position: relative;
+    right: -100px;
+    height: 650px;  
+}
+
+.mari{
+background-color: rgb(255, 225, 219);
+display: grid;
+padding: 5% 5%;
+grid-template-columns: repeat(4, 250px); 
+grid-template-rows: repeat(4, 300px);
+    }
+
+
+.mari .mari-roxana .mari-fanny{
+    flex: 1;
+    position: center;
+    right: -550px;
+    height: 200px;  
+    background-color: blueviolet;
+    border: 2px solid #000000;
+}
+
+.mari .mari-roxana .mari-fanny h1{
+    font-size: 32px;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mari .mari-roxana .mari-fanny p{
+    font-size: 20px;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mari .mari-roxana .mari-fanny button{
+    font-size: 15px;
+    color: #00000071;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.mari .L1{
+    flex: 1;
+    position: center;
+    right: -550px;
+    height: 350px;
+    background-color: rgb(221, 201, 240);
+    border: 2px solid #000000;
+}
 
 /*aqui empiezan los media queries*/
 
