@@ -7,22 +7,22 @@ h2{
 
 .header{
     margin-top: 1px;
-    margin-left: 100px;
+    margin-left: 100px; /* margenes */
     margin-right: 20px;
-    font-size: 0;
+    font-size: 20px;  /*tamaño de fuente*/
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-.header > * {
-    display: inline-block;
-    font-size: 16px;
-    height: 100%;
-    vertical-align: middle;
-    line-height: 45px;
+.header > * { /* llama todo para eso sirve el * */
+    display: inline-block; /* muestra de manera horizontal */
+    font-size: 16px; /* tamaño de la fuente */
+    height: 100%; 
+    vertical-align: middle; /* para central*/
+    line-height: 45px; /* margene */
 }
 
 li{
-    display: inline;
+    display: inline; /* te pone en orden */
 }
 
 .logo{
@@ -31,11 +31,11 @@ li{
 
 .navbar{
     text-align: left;
-    color: chartreuse;
+    color: rgb(255, 255, 255);
     font-weight: 500;
     
 }
-
+/* botones */
 .actions{
     text-align: left;
     font-size: 14px;
@@ -52,20 +52,21 @@ li{
 }
 
 .video{
-    display: flex;
+    display: flex; /* el flex es para mostrarse en linea*/
     width: 75%;
     margin-left: 50px;
+    margin-bottom: 20px;
 }
 
 .features{
-    background-color: #037a83;
+    background-color: #c4e9f0;
     display: grid;
     padding: 5% 10%;
-    grid-template-columns: repeat(2, 550px); /* se agregan 2 columnas de 300px*/
-    grid-template-rows: repeat(2, 300px);
+    grid-template-columns: repeat(4, 550px); /* se agregan 2 columnas de 300px*/
+    grid-template-rows: repeat(1, 300px);
 }
 
-/* article{
+/*article{
     background-color: rgb(31, 181, 131);
     margin: 10px;
     width: 40%;
@@ -73,11 +74,11 @@ li{
 } */
 
 .features .feature-card {
-    margin-bottom: 30px;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-bottom: 22px;
+    margin-left: 10px;
+    margin-right: 10px;
     background-color: #fff;
-    border: 2px solid #D91512;
+    border: 5px solid #000000;
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -93,7 +94,7 @@ li{
 }
 
 .features .feature-card .feature-content img{
-    width: 70px;
+    width: 99px;
 }
 
 .features .feature-card .feature-content h3{
@@ -104,22 +105,28 @@ li{
 
 .features .feature-card .feature-content p{
     font-size: 16px;
-    color: rgb(127, 255, 8);
+    color: rgb(255, 8, 123);
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .features .feature-card .feature-content a{
 font-size: 17px;
-color: deeppink;
+color: rgb(20, 255, 90);
 font-family: Arial, Helvetica, sans-serif;
 }
 
 .features .feature-card .features-image{
-flex: 1;
+flex: 1; /*posisicon de la imaguen*/
 width: 40%;
 position: relative;
-right: -50px;
+right: 100px;
 height: 80%;
+}
+
+.features .feature-card .features-image figure,
+.features .feature-card .features-image img{
+    margin-top: 0;
+    height: 100%;
 }
 
 
@@ -128,51 +135,44 @@ height: 80%;
 
 
 .por{
-    background-color: #f5dc99;
+    background-color: #04dcf8;
     display: grid;
-    /*grid-template-columns: repeat(2, 550px);  se agregan 2 columnas de 300px
-    grid-template-rows: repeat(2, 300px);*/
+    grid-template-columns: repeat(4, 550px); /* se agregan 2 columnas de 300px*/
+    grid-template-rows: repeat(1, 300px);
 }
 
 .por .por-one .por-img{
     flex: 2;
     width: 30%;
     position: relative;
-    right: -850px;
-    height: 650px;  
+    right: -750px;
+    height: 750px;  
 }
 
 
 .por .por-one .por-eleven h1{
     font-size: 55px;
-    color: rgb(35, 9, 53);
+    color: rgb(21, 4, 121);
     font-family: Arial, Helvetica, sans-serif;
 }
-
 
 .por .por-one .por-eleven p{
     font-size: 19px;
-    color: rgb(245, 20, 170);
+    color: rgb(0, 0, 0);
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.por .por-one .por-img-1{
-    flex: 2;
-    width: 30%;
-    position: relative;
-    right: -100px;
-    height: 650px;  
+.por .por-one .por-eleven button{
+    font-size: 19px;
+    color: #000000;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .mari{
 background-color: rgb(255, 225, 219);
 display: grid;
 padding: 5% 5%;
-grid-template-columns: repeat(4, 250px); 
-grid-template-rows: repeat(4, 300px);
     }
-
-
 .mari .mari-roxana .mari-fanny{
     flex: 1;
     position: center;
@@ -180,26 +180,24 @@ grid-template-rows: repeat(4, 300px);
     height: 200px;  
     background-color: blueviolet;
     border: 2px solid #000000;
+    grid-template-columns: repeat(4, 50px); 
+    /*grid-template-rows: repeat(2, 50px);*/
 }
-
 .mari .mari-roxana .mari-fanny h1{
     font-size: 32px;
     color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
 }
-
 .mari .mari-roxana .mari-fanny p{
     font-size: 20px;
     color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
 }
-
 .mari .mari-roxana .mari-fanny button{
     font-size: 15px;
     color: #00000071;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-
 .mari .L1{
     flex: 1;
     position: center;
@@ -211,7 +209,7 @@ grid-template-rows: repeat(4, 300px);
 
 /*aqui empiezan los media queries*/
 
-@media(max-width:600px){
+@media(max-width:575px){
    .navbar, .actions{
     display: none;
    } 
@@ -224,8 +222,26 @@ main{
     body{
         background-color: lightsteelblue;
     }
+
 }
 
+/** dispositivos pequeños en vista landscape (horizontal) */
+@media (min-width: 576px) and (max-width: 767px) {
+  
+}
 
+/** dispositivos medianos (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+  
+}
 
+/** dispositivos grandes (desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  
+}
+
+/** dispositivos extra grandes (monitores grandes, tvs) */
+@media (min-width: 1200px) {
+  
+}
 
