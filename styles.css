@@ -58,6 +58,19 @@ li{
     margin-bottom: 20px;
 }
 
+
+
+.container > * {
+    right: 50%;
+    height: 22px;
+}
+
+
+
+
+
+
+
 .features{
     background-color: #c4e9f0;
     display: grid;

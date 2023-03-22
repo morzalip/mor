@@ -8,38 +8,121 @@
     <title>Practica 1</title>
     <link rel="stylesheet" href="styles.css"> 
     <link rel="stylesheet" href="min.css/bootstrap.min.css">
+    <script src="mis/bootstrap.bundle.min.js"></script>
+
+    <script
+     src="https://smtpjs.com/v3/smtp.js">
+    </script>
+
+    <script type="text/javascript">
+        function sendEmail() {
+            Email.send({
+                    Host: "smtp.elasticemail.com",
+                    Username: "pablorm538@gmail.com",
+                    Password: "92A64505AB79CA43F57365D82DDEEA6E69DB",
+                    To: 'pablorm538@gmail.com',
+                    From: "pablorm538@gmail.com",
+                    Subject: "holis",
+                    Body: "Well that was easy!!",
+                })
+                .then(function (message) {
+                    alert("mail sent successfully")
+                });
+        }
+    </script>
+
+
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+
+    
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
         <div class="container-fluid">
-            
-                <a class="navbar-brand" href="#"><img class="logo" src="gato/WhatsApp Image 2023-02-12 at 2.47.20 PM.jpeg" width="150px" height="150px"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-    <!-- header es la barra de navegacion -->
-    <header class="header">
-        <!-- Logo con link a la página principal -->
-
-        <!-- Menú de navegación -->
-        <div class="navbar">
-            <ul>
-              <li> Platform </li>
-              <li>Pricing</li> 
-              <li>Resources</li> 
-              <li>About</li>   
+          <a class="navbar-brand" href="#"><img class="logo" src="gato/HD-wallpaper-love-amor-fondo-chidos-fondos-de-pantalla-fondos-rojos-love-rojo-thumbnail.jpg" width="150px" height="150px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href=>inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pricing.html">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Resources</a>
+              </li>  
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>   
+              <li class="nav-item">
+                <a class="nav-link" href="#"><button>inicio</button></a>
+              </li> 
             </ul>
+          </div>
         </div>
-        <!-- Contenedor de acciones de usuario -->
-        <div class="actions">
-            <a>sing in</a>
-            <button>inicio</button>
-        </div>
-    </header>
-</div>
-</nav>
+      </nav>
+      <br></br> 
+      <br><br> 
+      <br><br> 
+      <br><br> 
 
+<!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+    
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <center><div class="carousel-item active">
+        <img src="gato/3db428339ce1dda447fc1cdbacfb9a46.jpg"  class="d-block" style="width:55%" width="150px" height="320px">
+      </div></center>
+    <center><div class="carousel-item">
+        <img src="gato/frases-de-libros-para-instagram_d590771d_800x800.jpg"  class="d-block" style="width:55%" width="150px" height="320px">
+      </div></center>
+    <center><div class="carousel-item">
+        <img src="gato/WhatsApp Image 2023-02-12 at 2.47.20 PM.jpeg"  class="d-block" style="width:55%" width="150px" height="320px">
+      </div></center>
+    </div>
+    
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+    <br></br> 
+      <br><br> 
+       
+      <div class="container mt-3">
+        <h2>Inline Forms</h2>
+        <p>If you want your form elements to appear side by side, use .row and .col:</p>
+        <form method="post">
+          <div class="row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Enter email" name="email">
+            </div>
+            <div class="col">
+              <button type="button" value="send Email" onclick="sendEmail()">enviar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <br></br> 
+      <br></br> 
+      <br></br> 
+      <br></br> 
+
+    
     <h1> Mi Primer Pagina Este Semestre </h1>
     <h2>Heading level 2</h2>
     <h3>Heading level 3</h3>
@@ -51,6 +134,13 @@
     <p>ESte es un parrafo</p>
     <p>ESte es un parrafo</p>
     <p>ESte es un parrafo</p>
+
+    <br></br> 
+    <br></br> 
+    <br></br> 
+    <br></br> 
+
+
     <!-- Este es un formulario-->
     <form>
         <label for="name">Nombre</label>
@@ -63,11 +153,16 @@
         <input type="email" id="email" name="email" placeholder="Correo"><br><br>
         <label>Contraseña</label>
         <input type="password" id="password" name="password" placeholder="Contraseña"><br><br>
-        <button></button>
         <button type="submit">Enviar</button>
     </form>
+    <br></br> 
+    <br></br> 
+    <br></br> 
 
-    <img src="img/dog.jpg" alt="" height="150px" width="150px">
+    <img src="gato/South_Park_main_characters.png" alt="" height="150px" width="150px">
+    <br></br> 
+    <br></br> 
+    <br></br> 
 
     <section class="video">
         <iframe width="300" height="200" src="https://www.youtube.com/embed/QpbQ4I3Eidg" title="Machine Gun Kelly, Camila Cabello - Bad Things (Official Music Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -89,6 +184,10 @@
             </form>
         </article>
     </section>
+    <br></br> 
+    <br></br> 
+    <br></br> 
+    <br></br> 
 
     <section class="features">
         <article class="feature-card">
@@ -155,7 +254,11 @@
         </div>
         </article><br><br>   
     </section>
-    <br><br>
+    <br></br> 
+    <br></br> 
+    <br></br> 
+    <br></br> 
+    <br></br> 
  
     <section class="por">
 <article class="por-one">
@@ -168,17 +271,17 @@
         </div>
         <div class="por-img">
             <figure>
-                <img src="https://i.pinimg.com/550x/13/af/20/13af20c12c97ea764e1a22f729031eff.jpg" alt="">
-            </figure>
-        </div>
-
-        <div class="por-img-1">
-            <figure>
-                <img height="150px" width="150px"src="gato/WhatsApp Image 2023-02-12 at 2.47.20 PM.jpeg" alt="">
+                <img height="150px" width="150px" src="https://i.pinimg.com/550x/13/af/20/13af20c12c97ea764e1a22f729031eff.jpg" alt="">
             </figure>
         </div>
         </article>
     </section>
+    <br></br> 
+    <br></br> 
+    <br></br> 
+    <br></br> 
+    <br></br> 
+
 
     <section class="mari">
         <article class="mari-roxana">
@@ -202,7 +305,9 @@
                     <a href="">Publica instantaneamente</a>
                 </div>
             </article>
-        </div><br><br>
+        </div>
+        <br></br> 
+        <br></br> 
 
         <div class="L1">
             <article>
@@ -217,7 +322,10 @@
             <a href="">Publica instantaneamente</a>
         </div>
     </article>
-</div><br><br>
+</div>
+<br></br> 
+<br></br> 
+<br></br> 
 
 
 <div class="L1">
@@ -233,7 +341,10 @@
     <a href="">Publica instantaneamente</a>
 </div>
 </article>
-</div><br><br>
+</div>
+<br></br> 
+<br></br> 
+
 
 
 <div class="L1">
@@ -249,7 +360,11 @@
     <a href="">Hola</a>
 </div>
 </article>
-</div><br><br>
-        </section>
+</div>
+<br></br> 
+<br></br> 
+<br></br> 
+
+</section>
 </body>
 </html>
