@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="min.css/bootstrap.min.css">
+    <link rel="stylesheet" href="pricing.css"> 
+    <script src="mis/bootstrap.bundle.min.js"></script>
+
+    <script>
+        function color() {
+            document.getElementById("juan").style.backgroundColor="blue";
+            document.getElementById("juan").style.color="pink";
+            document.getElementById("juan").style.fontSize="600%";
+        }
+    </script>
+
+    <script>
+        function cambiar(img) {
+            document.getElementById(img).src="gato/HD-wallpaper-love-amor-fondo-chidos-fondos-de-pantalla-fondos-rojos-love-rojo-thumbnail.jpg";
+
+        }
+    </script>
+   
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" style="background-color: rgb(3, 3, 3) !important;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img class="logo" src="gato/HD-wallpaper-love-amor-fondo-chidos-fondos-de-pantalla-fondos-rojos-love-rojo-thumbnail.jpg" width="150px" height="150px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index1.html">nicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pricing.html">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Resources</a>
+              </li>  
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>   
+              <li class="nav-item">
+                <a class="nav-link" href="#"><button>inicio</button></a>
+              </li> 
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <br></br> 
+      <br><br> 
+      <br><br> 
+      <br><br> 
+
+      
+
+      <div>
+        <p id="juan">El caballo esta feliz </p>
+        <button type="button" onclick="color()">click</button>
+        <br>
+        <br>
+        <button type="button" onclick="alert('ha sido hackeado')">no click</button>
+      </div>
+      <br></br>
+      <br></br>
+
+    <div id="img">
+    <img id="img1" src="gato/South_Park_main_characters.png" alt="" height="150px" width="150px" onmouseover="cambiar('img1')" onmouseout="this.src='gato/South_Park_main_characters.png';">
+    <br></br> 
+    <br></br> 
+
+    <img id="img2" src="gato/WhatsApp Image 2023-02-14 at 8.14.58 AM.jpeg" alt="" height="150px" width="150px" onmouseover="cambiar('img2')" onmouseout="this.src='gato/WhatsApp Image 2023-02-14 at 8.14.58 AM.jpeg';">
+    <br></br> 
+    <br></br>  
+
+    <img id="img3" src="gato/WhatsApp Image 2023-02-12 at 2.47.20 PM.jpeg" alt="" height="150px" width="150px" onmouseover="cambiar('img3')" onmouseout="this.src='gato/WhatsApp Image 2023-02-12 at 2.47.20 PM.jpeg';">
+    <br></br> 
+    <br></br> 
+    </div>
+</body>
+</html>
