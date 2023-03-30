@@ -15,7 +15,7 @@
 <body>
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" style="background-color: rgb(3, 3, 3) !important;">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img class="logo" src="gato/HD-wallpaper-love-amor-fondo-chidos-fondos-de-pantalla-fondos-rojos-love-rojo-thumbnail.jpg" width="150px" height="150px"></a>
+          <a class="navbar-brand" href="#"><img class="logo" src="Img/gemelita-yo.jpg" width="80px" height="110px"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -34,7 +34,7 @@
                 <a class="nav-link" href="#">About</a>
               </li>   
               <li class="nav-item">
-                <a class="nav-link" href="#"><button>inicio</button></a>
+                <a class="nav-link" href="#"><button>start+</button></a>
               </li> 
             </ul>
           </div>
@@ -87,10 +87,32 @@
         </div>
       </div>
     </div>
+    <br><br> 
+    <br><br> 
+    <br><br> 
 
 
+    <p>Click the "Try it" button to toggle between hiding and showing the DIV element:</p>
 
-
+    <button onclick="myFunction()">Try it</button>
+    
+    <div id="myDIV">
+    This is my DIV element.
+    </div>
+    
+    <p><b>Note:</b> The element will not take up any space when the display property set to "none".</p>
+    
+    <script>
+    function myFunction() {
+      var x = document.getElementById("myDIV");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    </script>
+    
 
 
 
